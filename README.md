@@ -1,5 +1,5 @@
 # Commentiquette
-## A Google Doc like commenting widget
+### A Google Doc like commenting widget
 
 To use:
 
@@ -19,6 +19,9 @@ $('#my-target').Commentiquette({
     notifyPath: ''
 });
 ```
+where indexID is some sort of unique index you are commenting. Could be the ID of a file or video.
+The property userName is the user name of the commenter. The remaining properties are paths to your
+backend that will perform asynchronous task.
 
 Then to delete widget:
 ```
