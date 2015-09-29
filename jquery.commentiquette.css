@@ -1,0 +1,181 @@
+/*
+* Commentiquette JQuery Plugin
+* Author: Kyle Marshall
+* Email: kyle.marshall@schrodinger.com
+* Version: 1.0
+* Used jquery-1.11.0.min.js for development
+*/ 
+
+.commentiquette-container {
+	width: 250px;
+}
+
+.commentiquette-comment-block {
+  margin-bottom: 20px;
+}
+
+.commentiquette-comment {
+	width: 235px;
+	margin: auto;
+  padding: 5px;
+  font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid rgba(133,133,133,0.15);
+/*
+	-webkit-box-shadow: -1px 2px 4px 1px rgba(133,133,133,0.81);
+  -moz-box-shadow: -1px 2px 4px 1px rgba(133,133,133,0.81);
+  box-shadow: -1px 2px 4px 1px rgba(133,133,133,0.81);*/
+
+  -webkit-box-shadow: -1px 3px 4px 0px rgba(199,199,199,1);
+  -moz-box-shadow: -1px 3px 4px 0px rgba(199,199,199,1);
+  box-shadow: -1px 3px 4px 0px rgba(199,199,199,1);
+}
+
+.commentiquette-user {
+  margin: 0;
+  font-weight: 400;
+}
+.commentiquette-timeline {
+  color: #9799a7;
+  font-size: 11px;
+  /*font-family: Georgia, Times, "Times New Roman", serif;*/
+  margin: 0 0 5px 0;
+  vertical-align: text-top;
+}
+
+span.commentiquette-menu-icon {
+  float: right;
+  opacity: 0.3;
+  /*background: url(ellipsis.png) left bottom no-repeat;*/
+  cursor: pointer;
+}
+
+span.commentiquette-menu-icon:hover {
+  opacity: 1;
+}
+
+.commentiquette-comment.edit {
+  /*background-color: rgba(252, 252, 252, 1);*/
+  background-color: #FFFFFF;
+}
+
+.commentiquette-comment.flat {
+  background-color: rgba(242, 244, 248, 1);
+}
+
+.commentiquette-comment-body {
+  font-size: 12px;
+  line-height: 14px;
+  word-wrap: break-word;
+}
+
+.commentiquette-comment-body.commentiquette-reply {
+  /*this border-bottom: property will be toggled on click*/
+  border-bottom: 1px solid rgba(133,133,133,0.15);
+  padding-bottom: 5px;
+}
+
+.commentiquette-comment textarea {
+  resize: none;
+  overflow: hidden;
+  outline: none;
+  width: 217px;
+  border: 1px solid #cccccc;
+  margin: 7px 4px 0 4px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.commentiquette-content-menu {
+  z-index: 9999;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+  border: 1px solid #CCC;
+  white-space: nowrap;
+  font-family: sans-serif;
+  background: #FFF;
+  color: #333;
+  border-radius: 5px;
+  padding: 0;
+}
+
+/* Each of the items in the list */
+.commentiquette-content-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.commentiquette-content-menu li:hover {
+  background-color: #DEF;
+}
+
+.commentiquette-buttons,
+.commentiquette-new-buttons {
+  margin: 2px 5px;
+}
+
+.commentiquette-buttons button{
+  border-radius: 3px;
+  padding: 6px;
+  width: 70px;
+  outline:0;
+}
+
+#commentiquette-button-reply{
+  margin-right: 10px;
+  background-color: #0078e0;
+  border:1px solid #0078e0;
+  color: #FFFFFF;
+}
+
+#commentiquette-button-new-series-reply{
+  background-color: #0078e0;
+  border:1px solid #0078e0;
+  color: #FFFFFF;
+  border-radius: 3px;
+  padding: 6px;
+  width: 70px;
+  outline:0;
+}
+
+#commentiquette-button-cancel{
+  background-color: #D3D3D3;
+  border:1px solid #D3D3D3;
+}
+
+.commentiquette-delete-popup{
+  z-index: 101;
+  background: #e3e3e3;
+  border:1px solid #ccc;
+  position: relative;
+  top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.commentiquette-notify-popup{
+  z-index: 101;
+  background: #e3e3e3;
+  border:1px solid #ccc;
+  position: relative;
+  top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.commentiquette-blackout {
+  background-color:#000 !important;
+  opacity:.7;
+  filter:alpha(opacity=70);
+  /*height:100%;
+  width:100%;*/
+  /*position:fixed;*/
+  position: relative;
+  /*top:0;
+  left:0;*/
+  z-index:100;
+  /*display:none;*/
+  cursor:pointer;
+}
